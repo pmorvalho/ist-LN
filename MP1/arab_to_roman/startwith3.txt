@@ -1,0 +1,65 @@
+0	1 	3 	eps
+
+1	9 	eps	I
+1	2	0	X
+1	4	1	X
+1	7	2	X
+1	11	3	X
+1	16	4	X
+1	20	5	X
+1	23	6	X
+1	27	7	X
+1	32	8	X
+1	38	9	X
+
+2	3	eps	X
+3	42	eps	X
+
+4	5	eps	X
+5	6	eps	X
+6	42	eps	I
+
+7	8	eps	X
+8	9	eps	X
+9	10	eps	I
+10	42	eps	I
+
+11	12	eps	X
+12	13	eps	X
+13	14	eps	I
+14	15	eps	I
+15	42	eps	I
+
+16	17	eps X
+17	18	eps	X
+18	19	eps	I
+19	42	eps	V
+
+20	21	eps	X
+21	22	eps	X
+22	42	eps	V
+
+23	24	eps	X
+24	25	eps	X
+25	26	eps	V
+26	42	eps	I
+
+27	28	eps	X
+28	29	eps	X
+29	30	eps	V
+30	31	eps	I
+31	42	eps	I
+
+32	33	eps	X
+33	34	eps	X
+34	35	eps	V
+35	36	eps	I
+36	37	eps	I
+37	42	eps	I
+
+38	39	eps	X
+39	40	eps	X
+40	41	eps	I
+41	42	eps	X
+
+42
