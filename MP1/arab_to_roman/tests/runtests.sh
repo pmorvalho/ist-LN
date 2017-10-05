@@ -20,7 +20,4 @@ do
 	fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait fst_out/test_$filename.fst | dot -Tpng > test_$filename.png
 done
 
-rm  *.fst *.pdf *.png *.ps
-rm -r fst_out
-rm -r fst_in
 rm -r numbers

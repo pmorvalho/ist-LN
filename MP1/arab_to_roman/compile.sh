@@ -14,7 +14,7 @@
 # done
 fstcompile --isymbols=syms.txt --osymbols=syms.txt roman2arab.txt | fstarcsort > roman2arab.fst
 fstminimize roman2arab.fst roman2arab.fst
-fstarcsort $filename.fst $filename.fst
+fstarcsort roman2arab.fst roman2arab.fst
 fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait roman2arab.fst | dot -Tpng  > roman2arab.png
 
 # Juntar os transdutores parciais num geral
