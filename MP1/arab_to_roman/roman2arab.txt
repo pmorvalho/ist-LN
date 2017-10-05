@@ -3,7 +3,8 @@
 0	9	L		eps
 
 1	2	I		eps
-1	4	V		5
+1	4	V		eps
+1 	12	eps		0
 
 2	12	eps		1
 2	3	I 		eps
