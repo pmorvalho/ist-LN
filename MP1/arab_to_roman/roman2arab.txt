@@ -1,4 +1,5 @@
-0	1	eps		eps
+0	2	I		eps
+0	4	V		eps
 0 	7	X		eps
 0	9	L		eps
 
