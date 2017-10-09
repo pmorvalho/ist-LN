@@ -6,7 +6,7 @@ rm *.fst *.png
 
 fstcompile --isymbols=syms.txt --osymbols=syms.txt roman2arab.txt  > roman2arab.fst
 
-# fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait roman2arab.fst | dot -Tpng  > roman2arab.png
+fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait roman2arab.fst | dot -Tpng  > roman2arab.png
 
 #  Transdutor que inverte o transdutor de numero romanos para arabes, ficando um transdutor que transforma numeros arabes em romanos
 
@@ -45,7 +45,10 @@ fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait transdutor2.fst | 
 
 fstcompile --isymbols=syms.txt --osymbols=syms.txt transdutor3.txt  > transdutor3.fst
 
+fstarcsort transdutor3.fst transdutor3.fst
+
 fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait transdutor3.fst | dot -Tpng  > transdutor3.png
+fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait transdutor3.fst | dot -Tpdf  > transdutor3.pdf
 
 # Transdutor Codificador
 

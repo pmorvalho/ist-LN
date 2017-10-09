@@ -1,8 +1,5 @@
 ################### Testa os tradutores ################
-rm  *.fst *.pdf *.png *.ps
 
-rm -r fst_out
-rm -r fst_in
 
 mkdir fst_in
 mkdir fst_out
@@ -10,6 +7,7 @@ mkdir numbers
 
 python gennumbers.py
 
+# transdutor 1 tests
 for f in numbers/*.txt
 do
 	filename=$(basename $f .txt)
@@ -19,4 +17,6 @@ do
 	fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait fst_out/test_$filename.fst | dot -Tpng > test_$filename.png
 done
 
+rm -r fst_out
+rm -r fst_in
 rm -r numbers
