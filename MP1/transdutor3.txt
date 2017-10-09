@@ -60,7 +60,7 @@
 1	1	x 	x
 1	1	y	y
 1	1	z	z
-1	6	_	_
+1	31	_	_
 
 2	2	1 	1
 2	2 	2 	2
@@ -72,17 +72,116 @@
 2	2	8	8
 2	2	9	9
 2	2	0	0
-2	6	_	_
+2	31	_	_
 
-3	5	r	V
-3	1	eps	L
+3	20	r	V
+3	5	a	L
+3	6	b	L
+3	7	c	L
+3	8	d	L
+3	9	e 	L
+3	10	f	L
+3	29	g	L
+3	11	h	L
+3	3	i	L
+3	12	j	L
+3	13	k	L
+3	14	l 	L
+3	15	m	L
+3	16	n	L
+3	17	o	L
+3	18	p	L
+3	19	q	L
+3	21	s	L
+3	22	t	L
+3	23	u	L
+3	24	v 	L
+3 	25	w	L
+3	26	x 	L
+3 	27	y	L
+3	28	z	L
+3	30	_	L
 
+4	5	a	m
 4	1	b	7
-4	1	eps	m
+4	7	c	m
+4	8	d	m
+4	9	e 	m
+4	10	f	m
+4	29	g	m
+4	11	h	m
+4	3	i	m
+4	12	j	m
+4	13	k	m
+4	14	l 	m
+4	4	m	m
+4	16	n	m
+4	17	o	m
+4	18	p	m
+4	19	q	m
+4	21	s	m
+4	22	t	m
+4	23	u	m
+4	24	v 	m
+4 	25	w	m
+4	26	x 	m
+4 	27	y	m
+4	28	z	m
+4	30	_	m
 
-5	1	eps	r
+5	1	eps	X
 
-6	0	eps	eps
-6	7	eps	eps
+6	1	eps b
 
-7
+7	1	eps c
+
+8	1	eps	d
+
+9	1	eps	9
+
+10	1	eps	f
+
+11	1	eps	h
+
+12	1	eps	j
+
+13 	1	eps	k
+
+14 	1	eps	l
+
+15 	4	eps	m
+
+16	1	eps	n
+
+17	1	eps	0
+
+18	1	eps p
+
+19	1	eps	q
+
+20	1	eps	r
+
+21	1	eps	s
+
+22	1	eps	t
+
+23	1	eps	8
+
+24	1	eps v
+
+25	1	eps	w
+
+26	1	eps	x
+
+27	1	eps	y
+
+28	1	eps	z
+
+29	1	eps	g
+
+30	31	eps	_
+
+31	0	eps	eps
+31	32	eps	eps
+
+32

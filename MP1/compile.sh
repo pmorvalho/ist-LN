@@ -10,9 +10,9 @@ fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait roman2arab.fst | d
 
 #  Transdutor que inverte o transdutor de numero romanos para arabes, ficando um transdutor que transforma numeros arabes em romanos
 
-fstinvert	roman2arab.fst arab2roman.fst
+fstinvert	roman2arab.fst  transdutorRomanos.fst
 
-fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait arab2roman.fst | dot -Tpng  > arab2roman.png
+fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait  transdutorRomanos.fst | dot -Tpng  >  transdutorRomanos.png
 
 # Transdutor que le as letras minusculas de 'a' a 'z'
 
@@ -24,7 +24,7 @@ fstcompile --isymbols=syms.txt --osymbols=syms.txt transdutorTraco.txt  > transd
 
 # cria um transdutor que transforma os numeros arabaes em romanos e le um '_' no final
 
-fstconcat arab2roman.fst transdutorTraco.fst transdutorArabTraco.fst
+fstconcat  transdutorRomanos.fst transdutorTraco.fst transdutorArabTraco.fst
 
 # cria o transdutor 1
 
@@ -37,9 +37,16 @@ fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait transdutor1.fst | 
 
 # Transdutor 2
 
-fstcompile --isymbols=syms.txt --osymbols=syms.txt transdutor2.txt  > transdutor2.fst
+fstcompile --isymbols=syms.txt --osymbols=syms.txt transdutorRoman2Code.txt  > transdutorRoman2Code.fst
+
+fstunion transdutorRoman2Code.fst transdutor-a-z.fst transdutor2.fst
+
+fstclosure	transdutor2.fst transdutor2.fst
 
 fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait transdutor2.fst | dot -Tpng  > transdutor2.png
+
+
+# fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait transdutor2.fst | dot -Tpng  > transdutor2.png
 
 # Transdutor 3
 
@@ -62,9 +69,9 @@ fstarcsort transdutor21.fst transdutor21.fst
 
 fstarcsort transdutor3.fst transdutor3.fst
 
-fstcompose transdutor21.fst transdutor3.fst transdutorCodificador.fst
+fstcompose transdutor21.fst transdutor3.fst codificador.fst
 
-fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait transdutorCodificador.fst | dot -Tpng  > transdutorCodificador.png
+fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait codificador.fst | dot -Tpng  > codificador.png
 
 # Transdutor Descodificador
 
@@ -75,9 +82,11 @@ fstcompose transdutor3inv.fst transdutor2inv.fst transdutor32inv.fst
 
 fstinvert transdutor1.fst transdutor1inv.fst
 
-fstcompose transdutor32inv.fst transdutor1inv.fst transdutorDescodificador.fst
+fstcompose transdutor32inv.fst transdutor1inv.fst descodificador.fst
 
-fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait transdutorDescodificador.fst | dot -Tpng  > transdutorDescodificador.png
+fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait descodificador.fst | dot -Tpng  > descodificador.png
 
 
-rm transdutorTraco.fst transdutorArabTraco.fst transdutor-a-z.fst roman2arab.fst transdutor32inv.fst transdutor21.fst transdutor3inv.fst transdutor2inv.fst transdutor1inv.fst
+rm transdutorTraco.fst transdutorArabTraco.fst transdutor-a-z.fst 
+rm roman2arab.fst transdutor32inv.fst transdutor21.fst transdutor3inv.fst 
+rm transdutor2inv.fst transdutor1inv.fst transdutorRoman2Code.fst
