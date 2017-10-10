@@ -15,6 +15,9 @@ do
 	fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait fst_in/$filename.fst | dot -Tpng  > $filename.png
 	fstcompose fst_in/$filename.fst ../codificador.fst > fst_out/test_$filename.fst
 	fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait fst_out/test_$filename.fst | dot -Tpdf > test_$filename.pdf
+	fstrmepsilon fst_out/test_$filename.fst fst_out/test_$filename.fst
+	fstminimize fst_out/test_$filename.fst fst_out/test_$filename.fst
+	fstprint --isymbols=syms.txt --osymbols=syms.txt fst_out/test_$filename.fst
 done
 
 rm -r fst_out
