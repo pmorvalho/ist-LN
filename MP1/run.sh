@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm *.fst *.png
+rm *.fst *.pdf
 
 # Transdutor Numeros Romanos para Arabes
 
@@ -54,7 +54,8 @@ fstcompile --isymbols=syms.txt --osymbols=syms.txt transdutor3.txt  > transdutor
 
 fstarcsort transdutor3.fst transdutor3.fst
 
-fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait transdutor3.fst | dot -Tpdf  > transdutor3.pdf
+fstclosure transdutor3.fst transdutor3.fst
+
 fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait transdutor3.fst | dot -Tpdf  > transdutor3.pdf
 
 # Transdutor Codificador
@@ -71,6 +72,8 @@ fstarcsort transdutor3.fst transdutor3.fst
 
 fstcompose transdutor21.fst transdutor3.fst codificador.fst
 
+fstrmepsilon codificador.fst codificador.fst
+
 fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait codificador.fst | dot -Tpdf  > codificador.pdf
 
 # Transdutor Descodificador
@@ -83,6 +86,8 @@ fstcompose transdutor3inv.fst transdutor2inv.fst transdutor32inv.fst
 fstinvert transdutor1.fst transdutor1inv.fst
 
 fstcompose transdutor32inv.fst transdutor1inv.fst descodificador.fst
+
+fstrmepsilon descodificador.fst descodificador.fst
 
 fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait descodificador.fst | dot -Tpdf  > descodificador.pdf
 
