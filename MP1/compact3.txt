@@ -1,17 +1,32 @@
-0	0	digito 				=
-0	0	[b-df-hj-np-tv-z] 	=
-0	0	a					X
-0	0	e 					9
+0	5	digito 				=
+0	4	[b-df-hj-np-tv-z] 	=
+0	4	a					X
+0	4	e 					9
 0	1	i 					eps
-0	0	o					0
-0	0	u					8
+0	4	o					0
+0	4	u					8
 0 	3	m					eps
-0	0	_					=
+
 1	2	r					V
-1	0	eps 				L 	0.1
-2 	0	eps 				r
-3	0	eps 				m 	0.1
-3	0 	b					7
+1	4	eps 				L 	0.1
+
+2 	4	eps 				r
+
+3	4	eps 				m 	0.1
+3	4 	b					7
+
+4	4	[b-df-hj-np-tv-z]	=
+4	4	a					X
+4	4	e 					9
+4	1	i 					eps
+4	4	o					0
+4	4	u					8
+4 	3	m					eps
+4	0	_					=
+
+5	5	digito				=
+5	0	_					=
+
 0
 
 
