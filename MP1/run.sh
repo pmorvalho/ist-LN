@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm *.fst *.pdf
+rm *.fst
 
 # ----------------------------------- TRANSDUTOR ROMANOS -----------------------------------
 
@@ -40,10 +40,13 @@ python scripts/compact2fst.py compact2.txt > transdutor2.txt
 
 fstcompile --isymbols=syms.txt --osymbols=syms.txt transdutor2.txt  > transdutor2.fst
 
+fstclosure	transdutor2.fst transdutor2.fst
+
+fstrmepsilon transdutor2.fst transdutor2.fst
+
+fstarcsort transdutor2.fst transdutor2.fst
+
 fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait transdutor2.fst | dot -Tpdf  > transdutor2.pdf
-
-# fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait transdutor2.fst | dot -Tpng  > transdutor2.png
-
 
 # ------------------------------------- TRANSDUTOR 3 ---------------------------------------
 
