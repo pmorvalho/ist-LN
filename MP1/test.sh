@@ -37,11 +37,11 @@ function run_test () { # corre os testes gerais no respectivo transdutor
 	# remover eps e minimizar pra ter output mais bonito (opcional)
 	fstrmepsilon fst_out/test_$3_$2.fst fst_out/test_$3_$2.fst
 
-	fstprint --isymbols=syms.txt --osymbols=syms.txt fst_out/test_$3_$2.fst | sort -gr | awk -F " " '{print $4}' | grep -v "eps" | tr -d "\n" > $3_output/$2.output
+	fstprint --isymbols=syms.txt --osymbols=syms.txt fst_out/test_$3_$2.fst | sort -gr | awk -F " " '{print $4}' | grep -v "eps" | tr -d "\n" > output_$3/$2.output
 
-	RESULT=$(diff $3_output/$2.output $3_expected_output/$2.expected)
+	DIFF=$(diff output_$3/$2.output $3_expected_output/$2.expected)
 
-	if [ -n "$RESULT" ]; then
+	if [ -n "$DIFF" ]; then
 		echo "TRANSDUTOR: $1
 		"
 		echo "INPUT: $2
@@ -49,7 +49,7 @@ function run_test () { # corre os testes gerais no respectivo transdutor
 		echo "EXPECTED:"
 		cat $3_expected_output/$2.expected
 		echo "OUTPUT:"
-		cat $3_output/$2.output
+		cat output_$3/$2.output
 		echo""
 		echo "------------------------------"
 		FAILED=$(($FAILED+1))
@@ -150,7 +150,14 @@ function test_t1_t2_t3_cod_descod(){ # Testa os numeros de 1 a 99 com o Transdut
 }
 
 function clean(){ # limpa os outputs
-	rm t1_output/*.* t2_output/*.* t3_output/*.* cod_output/*.* descod_output/*.* tR_output/*.* *.png *.pdf
+	rm *.png *.pdf
+	rm -r output_t1 output_t2 output_t3 output_tR output_cod output_descod
+	mkdir output_t1 
+	mkdir output_t2 
+	mkdir output_t3 
+	mkdir output_tR 
+	mkdir output_cod 
+	mkdir output_descod
 }
 
 while [[ $# -gt 0 ]]
@@ -268,6 +275,5 @@ done
 		clean
 	fi	
 
-rm -r fst_out fst_in
-
+rm -r fst_out fst_in 
 cd ..
