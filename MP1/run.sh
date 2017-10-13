@@ -8,6 +8,8 @@ fstcompile --isymbols=syms.txt --osymbols=syms.txt roman2arab.txt  > roman2arab.
 
 fstinvert	roman2arab.fst  transdutorRomanos.fst
 
+fstrmepsilon transdutorRomanos.fst transdutorRomanos.fst
+
 fstdraw    --isymbols=syms.txt --osymbols=syms.txt --portrait  transdutorRomanos.fst | dot -Tpdf  >  transdutorRomanos.pdf
 
 
@@ -75,7 +77,6 @@ fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait codificador.fst | dot
 fstinvert codificador.fst descodificador.fst
 
 fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait descodificador.fst | dot -Tpdf  > descodificador.pdf
-
 
 rm transdutorTraco.fst transdutorArabTraco.fst transdutor-a-z.fst transdutor2.txt transdutor3.txt 
 rm roman2arab.fst transdutor21.fst transdutor-a-z.txt
