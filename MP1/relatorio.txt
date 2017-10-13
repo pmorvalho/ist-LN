@@ -1,0 +1,38 @@
+Relatório do 1º Projeto (LN 2017/2018 MEIC-A)
+
+Grupo: 19
+Daniel Correia, 80967
+Pedro Miguel Orvalho, 81151
+
+1) Organização das pastas
+	- (home): pasta inicial onde estão os scripts para compilar (run.sh) e testar (test.sh) e onde estão os transdutores a compilar em formato .txt.
+
+	- tests/: contém as estruturas de suporte necessárias para correr os casos de teste sobre os transdutores do projeto.
+	
+	- scripts/: contém os scripts auxiliares fornecidos pelo professor e um script de geração de números.
+
+2) Identificação dos ficheiros
+	- roman2arab.txt: transdutor que converte números romanos em números arábicos 
+		Este transdutor será invertido para produzir o transdutor que converte números arábicos em números romanos através da operação fstinvert.
+
+	- compact-a-z.txt: transdutor em formato compactado que lê uma palavra terminada em traço ('_') e escreve todas as letras e o traço no output. 
+
+	- transdutorTraco.txt: transdutor que lê um traço e escreve um traço no output.
+		Será usado juntamente com a operação fstconcat e o transdutor de números arábicos para romanos, para produzir uma parte do transdutor 1.
+
+	- compact2.txt: transdutor 2 em formato compactado.
+
+	- compact3.txt: transdutor 3 em formato compactado.
+
+	- run.sh: script de compilação de pdfs de todos os transdutores.
+
+	- test.sh: script para correr os casos de teste utilizados durante o desenvolvimento.
+
+3) Decisões de desenvolvimento tomadas
+	- Utilizámos várias vezes a operação fstclosure sobre os nossos transdutores para permitir o processamento de múltiplas palavras (até ao fim do input).
+
+	- No transdutor 3, para resolver a ambiguidade da letra "i" (escrever um L ou um V se for seguido de r) utilizámos pesos nos arcos e a operação fstshortestpath na execução do testes. 
+
+4) Exemplos de utilização
+	- Correr o script "run.sh" e analisar os pdfs gerados.
+	- Correr o script "test.sh" e verificar o output dos diffs no terminal.
