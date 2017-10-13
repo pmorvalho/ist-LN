@@ -1,3 +1,4 @@
 *.png
 *.fst
-*.pdf 
+*.pdf
+.DS_Store 
