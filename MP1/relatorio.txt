@@ -24,15 +24,32 @@ Pedro Miguel Orvalho, 81151
 
 	- compact3.txt: transdutor 3 em formato compactado.
 
-	- run.sh: script de compilação de pdfs de todos os transdutores.
+	- run.sh: script de compilação de todos os transdutores e o desenho dos mesmos em pdf.
 
 	- test.sh: script para correr os casos de teste utilizados durante o desenvolvimento.
 
+	- os pdf's resultantes dos transdutores, tem o respectivo nome do transdutor.
+
 3) Decisões de desenvolvimento tomadas
+	De maneira a obtermos o codificador e o descodificador (codificador invertido), transdutores nao-deterministicos e com pesos:
+
 	- Utilizámos várias vezes a operação fstclosure sobre os nossos transdutores para permitir o processamento de múltiplas palavras (até ao fim do input).
 
-	- No transdutor 3, para resolver a ambiguidade da letra "i" (escrever um L ou um V se for seguido de r) utilizámos pesos nos arcos e a operação fstshortestpath na execução do testes. 
+	- No transdutor 3, para resolver a ambiguidade da letra "i" (escrever um L ou um V se for seguido de r) e a questão do m (seguido de um b ser 7 ou ser m seguido de qualquer outra letra) utilizámos pesos nos arcos e a operação fstshortestpath na execução do testes. 
 
 4) Exemplos de utilização
 	- Correr o script "run.sh" e analisar os pdfs gerados.
+	
 	- Correr o script "test.sh" e verificar o output dos diffs no terminal.
+		USAGE: test.sh [-c|--compile] [-a|--all] [-tR|--transdutorRomanos] [-t1|--transdutor1] [-t2|--transdutor2] [-t3|--transdutor3] [-cod|--codificador] [-descod|--descodificador] [-cln|--clean] [-i|--input word] 
+		--> -c|--compile -- para compilar
+		--> -a|--all -- para testar todos os transdutores
+		--> -tR|--transdutorRomanos -- para testar todos o transdutor dos Romanos
+		--> -t1|--transdutor1 -- para testar o transdutor 1
+		--> -t2|--transdutor2 -- para testar o transdutor 2
+		--> -t3|--transdutor3 -- para testar o transdutor 3
+		--> -cod|--codificador -- para testar o codificador
+		--> -descod|--descodificador -- para testar o codificador
+		--> -cln|--clean  -- para limpar os outputs
+		--> -i|--input word  -- para correr a word nos transdutor selecionados"
+ 

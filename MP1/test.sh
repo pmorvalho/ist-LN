@@ -46,14 +46,20 @@ function run_test () { # corre os testes gerais no respectivo transdutor
 		"
 		echo "INPUT: $2
 		"
-		echo "EXPECTED:"
-		cat $3_expected_output/$2.expected
-		echo "OUTPUT:"
-		cat output_$3/$2.output
-		echo""
+		echo "EXPECTED: $(cat $3_expected_output/$2.expected)"
+		echo "OUTPUT: $(cat output_$3/$2.output)"	
+		echo ""
 		echo "------------------------------"
 		FAILED=$(($FAILED+1))
-  	fi
+	else
+		if [ -s output_$3/$2.output ]; then
+			echo ""
+			echo "INPUT: $2
+			"
+			echo "OUTPUT: $(cat output_$3/$2.output)"	
+			echo""
+		fi	
+	fi
 }
 
 function run_word_test () { # corre a respectiva word no trandutor respectivo
@@ -66,10 +72,9 @@ function run_word_test () { # corre a respectiva word no trandutor respectivo
 
 	echo "TRANSDUTOR: $1
 	"
-    echo "INPUT: $2
-    "
-	echo "OUTPUT:"
-	fstprint --isymbols=syms.txt --osymbols=syms.txt fst_out/test_$3_$2.fst | sort -gr | awk -F " " '{print $4}' | grep -v "eps" | tr -d "\n"
+    	echo "INPUT: $2
+    	"
+    	echo "OUTPUT: $(fstprint --isymbols=syms.txt --osymbols=syms.txt fst_out/test_$3_$2.fst | sort -gr | awk -F " " '{print $4}' | grep -v "eps" | tr -d "\n")"
 	echo""
 	echo "------------------------------"
 
