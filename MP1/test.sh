@@ -31,7 +31,7 @@ function compile() { # compila os transdutores
 
 function run_test () { # corre os testes gerais no respectivo transdutor
 
-	fstcompose fst_in/$2.fst ../$1.fst | fstshortestpath > fst_out/test_$3_$2.fst
+	fstcompose fst_in/$2.fst ../fsts/$1.fst | fstshortestpath > fst_out/test_$3_$2.fst
 	fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait fst_out/test_$3_$2.fst | dot -Tpdf > test_$3_$2.pdf
 	
 	# remover eps e minimizar pra ter output mais bonito (opcional)
@@ -64,7 +64,7 @@ function run_test () { # corre os testes gerais no respectivo transdutor
 
 function run_word_test () { # corre a respectiva word no trandutor respectivo
 
-	fstcompose fst_in/$2.fst ../$1.fst | fstshortestpath > fst_out/test_$3_$2.fst
+	fstcompose fst_in/$2.fst ../fsts/$1.fst | fstshortestpath > fst_out/test_$3_$2.fst
 	fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait fst_out/test_$3_$2.fst | dot -Tpdf > test_$3_$2.pdf
 	
 	# remover eps e minimizar pra ter output mais bonito (opcional)

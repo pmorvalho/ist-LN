@@ -5,13 +5,19 @@ Daniel Correia, 80967
 Pedro Miguel Orvalho, 81151
 
 1) Organização das pastas
-	- (home): pasta inicial onde estão os scripts para compilar (run.sh) e testar (test.sh) e onde estão os transdutores a compilar em formato txt.
+	- (home): pasta inicial onde estão os scripts para compilar (run.sh) e testar (test.sh).
 
 	- tests/: contém as estruturas de suporte necessárias para correr os casos de teste sobre os transdutores do projecto.
 	
 	- scripts/: contém os scripts auxiliares fornecidos pelo professor e um script de geração de números.
 
 	- emails/: contém os emails codificados e descodificados pedidos no enunciado, e as várias fases destes quando passam por cada transdutor, ou seja o email codificado pelo trandutor 1 este email é usado para ser codificado pelo transdutor 2, que é usado para ser codificado pelo transdutor 3. Em relação aos descodificados os transdutores são invertidos e por ordem inversa mas a ideia é a mesma.
+
+	-txts/: onde se encontram os txt's dos trandutores para compilar, quer compactados (compact) quer não compactados.
+
+	-pdfs/: onde se encontram os pdf's dos transdutores pedidos, transdutor 1,2,3, codificador e descodificador.
+
+	-fsts/: onde se encontram os fst's dos transdutores pedidos.
 
 2) Identificação dos ficheiros
 	- roman2arab.txt: transdutor que converte números romanos em números arábicos 
@@ -26,11 +32,15 @@ Pedro Miguel Orvalho, 81151
 
 	- compact3.txt: transdutor 3 em formato compactado.
 
-	- run.sh: script de compilação de todos os transdutores e o desenho dos mesmos em PDF.
+	- run.sh: script de compilação de todos os transdutores e o desenho dos mesmos em PDF, gera também os pdf's dos emails para descodificar e codificar.
 
 	- test.sh: script para correr os casos de teste utilizados durante o desenvolvimento.
 
-	- Os PDFs resultantes dos transdutores têm o respectivo nome do transdutor.
+	- Os PDFs resultantes dos transdutores têm o respectivo nome do transdutor, e encontram-se na pasta pdfs.
+
+	- Os fst's dos transdutores encontram-se na pasta fsts.
+
+	- Os emails codificados e descodificados encontram-se em formato pdf na pasta emails
 
 3) Decisões de desenvolvimento tomadas
 	De maneira a obtermos o codificador e o descodificador (codificador invertido), transdutores não-deterministicos e com pesos:
