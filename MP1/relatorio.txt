@@ -11,6 +11,8 @@ Pedro Miguel Orvalho, 81151
 	
 	- scripts/: contém os scripts auxiliares fornecidos pelo professor e um script de geração de números.
 
+	- emails/: contém os emails codificados e descodificados pedidos no enunciado, e as várias fases destes quando passam por cada transdutor, ou seja o email codificado pelo trandutor 1 este email é usado para ser codificado pelo transdutor 2, que é usado para ser codificado pelo transdutor 3. Em relação aos descodificados os transdutores são invertidos e por ordem inversa mas a ideia é a mesma.
+
 2) Identificação dos ficheiros
 	- roman2arab.txt: transdutor que converte números romanos em números arábicos 
 		Este transdutor será invertido para produzir o transdutor que converte números arábicos em números romanos através da operação fstinvert.

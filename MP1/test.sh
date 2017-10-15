@@ -280,5 +280,6 @@ done
 		clean
 	fi	
 
+rm *.png *.pdf
 rm -r fst_out fst_in 
 cd ..
