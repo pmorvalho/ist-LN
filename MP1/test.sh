@@ -85,7 +85,6 @@ function word_test(){ # Chama a funcao de correr uma palavra nos respectivos tra
 	python ../scripts/word2fst.py $1 > examples/$1.txt
 
 	fstcompile --isymbols=syms.txt --osymbols=syms.txt < examples/$1.txt | fstarcsort > fst_in/$1.fst
-	fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait fst_in/$1.fst | dot -Tpng  > $1.png
 
 	if [ $T1 -ne 0 ]; then
 		run_word_test transdutor1 $1 t1
@@ -122,8 +121,6 @@ function test_Romanos(){ # Testa os numeros de 1 a 99 com o Transdutor de Romano
 	do
 		filename=$(basename $f .txt)
 		fstcompile --isymbols=syms.txt --osymbols=syms.txt $f | fstarcsort > fst_in/$filename.fst
-		
-		fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait fst_in/$filename.fst | dot -Tpng  > $filename.png
 
 		run_test transdutorRomanos $filename tR
 
@@ -144,9 +141,7 @@ function test_t1_t2_t3_cod_descod(){ # Testa os numeros de 1 a 99 com o Transdut
 	for f in examples/*.txt
 	do
 		filename=$(basename $f .txt)
-		# echo "testing number $filename "
 		fstcompile --isymbols=syms.txt --osymbols=syms.txt $f | fstarcsort > fst_in/$filename.fst
-		fstdraw --isymbols=syms.txt --osymbols=syms.txt --portrait fst_in/$filename.fst | dot -Tpng  > $filename.png
 
 		run_test $1 $filename $2
 		
@@ -155,7 +150,6 @@ function test_t1_t2_t3_cod_descod(){ # Testa os numeros de 1 a 99 com o Transdut
 }
 
 function clean(){ # limpa os outputs
-	rm *.png *.pdf
 	rm -r output_t1 output_t2 output_t3 output_tR output_cod output_descod
 	mkdir output_t1 
 	mkdir output_t2 
@@ -280,6 +274,6 @@ done
 		clean
 	fi	
 
-rm *.png *.pdf
+rm *.pdf
 rm -r fst_out fst_in 
 cd ..
