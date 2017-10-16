@@ -49,6 +49,8 @@ Pedro Miguel Orvalho, 81151
 
 	- No transdutor 3, para resolver a ambiguidade da letra "i" (escrever um L ou um V se for seguido de r) e a questão do m (seguido de um b ser 7 ou ser m seguido de qualquer outra letra) utilizámos pesos nos arcos e a operação fstshortestpath na execução dos testes. 
 
+	- em todos os transdutores fazemos a separação das palavras para ter a certeza se não há mistura entre números e letras, e temos estados repetidos para garantir que o input não é vazio, por exemplo _ ou __, ___.
+
 4) Exemplos de utilização
 	- Correr o script "run.sh" e analisar os pdfs gerados.
 	
