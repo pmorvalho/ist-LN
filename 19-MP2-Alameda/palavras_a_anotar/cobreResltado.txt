@@ -1,0 +1,20 @@
+A caridade cobre com um véu os defeitos dos homens. -----> lema: cobrir
+lema: cobrar probabilidade: 5.26179149056766e-08
+lema: cobrir probabilidade: 3.390452775594165e-07
+
+O inverno cobre minha cabeça, mas uma eterna primavera vive em meu coração. -----> lema: cobrar
+lema: cobrar probabilidade: 5.258158492990743e-08
+lema: cobrir probabilidade: 4.840159773674128e-08
+
+Uma mulher nua seria menos perigosa do que é uma saia habilmente exibida, que cobre tudo e, ao mesmo tempo, deixa tudo à vista.” -----> lema: cobrir
+lema: cobrar probabilidade: 1.9130582919861654e-07
+lema: cobrir probabilidade: 4.745838971218336e-05
+
+Pela grossura da camada de pó que cobre a lombada dos livros de uma biblioteca pública pode medir-se a cultura de um povo. -----> lema: cobrir
+lema: cobrar probabilidade: 5.739174875958497e-07
+lema: cobrir probabilidade: 0.0003796671176974669
+
+Exportamos couro e cobre, e não revolução. -----> lema: cobrar
+lema: cobrar probabilidade: 5.26179149056766e-08
+lema: cobrir probabilidade: 4.843503965134521e-08
+

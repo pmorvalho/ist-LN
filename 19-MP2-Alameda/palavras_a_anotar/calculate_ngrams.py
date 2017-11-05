@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# Grupo 19
+# 80967, Daniel Correia
+# 81151, Pedro Orvalho
+
 import nltk
 from nltk import word_tokenize
 from nltk.util import ngrams
@@ -12,15 +16,15 @@ def get_ngrams_without_smoothing(corpus, keyword):
 	bigrams = ngrams(tokens,2)
 
 	count_unigrams = Counter(tokens)
-	open("unigrams_"+ keyword +".txt","w").close() #reset output file
-	with open("unigrams_"+ keyword +".txt","a") as output_unigrams:
+	open(keyword +"Unigramas.txt","w").close() #reset output file
+	with open(keyword +"Unigramas.txt","a") as output_unigrams:
 		for k,v in count_unigrams.items():
 			line = str(k) + "\t" + str(v) + "\n"
 			output_unigrams.write(line)
 
 	count_bigrams = Counter(bigrams)
-	open("bigrams_"+ keyword +".txt","w").close() #reset output file
-	with open("bigrams_"+ keyword +".txt","a") as output_bigrams:
+	open(keyword +"Bigramas.txt","w").close() #reset output file
+	with open(keyword +"Bigramas.txt","a") as output_bigrams:
 		for k,v in count_bigrams.items():
 			line = " ".join(k) + "\t" + str(v) + "\n"
 			output_bigrams.write(line)

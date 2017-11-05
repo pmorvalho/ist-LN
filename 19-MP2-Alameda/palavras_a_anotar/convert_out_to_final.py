@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+# Grupo 19
+# 80967, Daniel Correia
+# 81151, Pedro Orvalho
 
 import sys
 import re
