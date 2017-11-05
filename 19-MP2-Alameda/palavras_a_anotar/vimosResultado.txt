@@ -1,17 +1,13 @@
 Grupo 19 - Resultados com/sem alisamento
-0 0 0 450 ver
-0 0 1 43 vir
 
 ===================== SEM ALISAMENTO ============================
 Todos os sábados vimos ao técnico ter um teste. -----> lema escolhido: ver
-lema: ver   probabilidade: -1
-lema: vir   probabilidade: -1
+lema: ver   probabilidade: 0
+lema: vir   probabilidade: 0
 ===================== COM ALISAMENTO ============================
 Todos os sábados vimos ao técnico ter um teste. -----> lema escolhido: vir
 lema: ver   probabilidade: 5.024251054992237e-08
 lema: vir   probabilidade: 1.1002933932333057e-07
-70 570 0 450 ver
-9 570 0 43 vir
 
 ===================== SEM ALISAMENTO ============================
 Os grandes homens são maiores na recordação do que ao natural, aquilo que vimos neles é, ao mesmo tempo, o seu melhor e o melhor de nós próprios. -----> lema escolhido: ver
@@ -21,19 +17,15 @@ lema: vir   probabilidade: 0.0
 Os grandes homens são maiores na recordação do que ao natural, aquilo que vimos neles é, ao mesmo tempo, o seu melhor e o melhor de nós próprios. -----> lema escolhido: ver
 lema: ver   probabilidade: 3.1446674589457017e-06
 lema: vir   probabilidade: 4.849796939002165e-07
-0 0 0 450 ver
-0 0 0 43 vir
 
 ===================== SEM ALISAMENTO ============================
 Sempre vimos boas leis, que fizeram com que uma pequena república crescesse, transformarem-se depois num peso para ela, depois de grande. -----> lema escolhido: ver
-lema: ver   probabilidade: -1
-lema: vir   probabilidade: -1
+lema: ver   probabilidade: 0
+lema: vir   probabilidade: 0
 ===================== COM ALISAMENTO ============================
 Sempre vimos boas leis, que fizeram com que uma pequena república crescesse, transformarem-se depois num peso para ela, depois de grande. -----> lema escolhido: vir
 lema: ver   probabilidade: 5.024251054992237e-08
 lema: vir   probabilidade: 5.501466966166528e-08
-1 29 0 450 ver
-5 29 0 43 vir
 
 ===================== SEM ALISAMENTO ============================
 Do país de onde vimos não há tristeza. -----> lema escolhido: ver
@@ -43,8 +35,6 @@ lema: vir   probabilidade: 0.0
 Do país de onde vimos não há tristeza. -----> lema escolhido: vir
 lema: ver   probabilidade: 9.980272992403217e-08
 lema: vir   probabilidade: 3.2784672728370516e-07
-57 1058 0 450 ver
-4 1058 0 43 vir
 
 ===================== SEM ALISAMENTO ============================
 Neste momento, vimos informar-lhes as demissões. -----> lema escolhido: ver

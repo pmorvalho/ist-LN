@@ -49,12 +49,12 @@ def calculate_prob(phrase, word, lemmas):
 			elif bi[1] == l and bi[0] == w_bef:
 				bi_before  = int(b[1])
 
-		print(bi_before,count_w_bef,bi_after,count_lemma,l)
+		# print(bi_before,count_w_bef,bi_after,count_lemma,l)
 		smooth_results.append((l, (((bi_before+1)/(count_w_bef+V))*((bi_after+1)/(count_lemma+V)))))
 		try:
 			basic_results.append( (l, (bi_before/count_w_bef)*(bi_after/count_lemma) ) )
 		except ZeroDivisionError:
-			basic_results.append( (l, -1))
+			basic_results.append( (l, 0))
 
 	print("\n===================== SEM ALISAMENTO ============================")
 	maximum = (lemmas[0],0)

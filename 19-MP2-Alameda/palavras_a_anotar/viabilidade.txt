@@ -9,3 +9,11 @@ Grupo 19
 	
 	- Ter em consideração a pontuação na construção dos n-gramas, pode ter consequências nos dois sentidos: por um lado podemos estar a dar demasiada importância à existência de pontuação antes/depois de uma palavra; por outro lado, ao termos em consideração a pontuação as nossas contagens de bigramas são mais abrangentes para as várias possibilidades de input.
 
+
+2) Discussão sobre escolha do lema menos visto quando a probabilidade sem alisamento é zero para os dois lemas
+
+	- Em termos teóricos e de acordo com a fórmula, escolher o lema menos visto quando a probabilidade sem alisamento é zero está correto porque a probabilidade com alisamento é então dada por 1/(contagem unigrama + vocabulário), logo menor valor de contagem (lema menos visto) resulta num maior valor de probabilidade.
+
+	- No entanto, em termos práticos, o que faria sentido se tivermos de "apostar" em qual o lema correto para um input desconhecido, seria escolher o lema que já foi visto mais vezes no corpus.
+
+

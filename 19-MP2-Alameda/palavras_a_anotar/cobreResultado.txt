@@ -1,17 +1,13 @@
 Grupo 19 - Resultados com/sem alisamento
-0 0 0 35 cobrar
-0 0 6 413 cobrir
 
 ===================== SEM ALISAMENTO ============================
 A caridade cobre com um véu os defeitos dos homens. -----> lema escolhido: cobrar
-lema: cobrar   probabilidade: -1
-lema: cobrir   probabilidade: -1
+lema: cobrar   probabilidade: 0
+lema: cobrir   probabilidade: 0
 ===================== COM ALISAMENTO ============================
 A caridade cobre com um véu os defeitos dos homens. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 5.264206302981604e-08
 lema: cobrir   probabilidade: 3.3919471491992533e-07
-0 3 0 35 cobrar
-0 3 0 413 cobrir
 
 ===================== SEM ALISAMENTO ============================
 O inverno cobre minha cabeça, mas uma eterna primavera vive em meu coração. -----> lema escolhido: cobrar
@@ -21,8 +17,6 @@ lema: cobrir   probabilidade: 0.0
 O inverno cobre minha cabeça, mas uma eterna primavera vive em meu coração. -----> lema escolhido: cobrar
 lema: cobrar   probabilidade: 5.260570801391148e-08
 lema: cobrir   probabilidade: 4.842292348945659e-08
-3 435 0 35 cobrar
-153 435 6 413 cobrir
 
 ===================== SEM ALISAMENTO ============================
 Uma mulher nua seria menos perigosa que uma saia exibida, que cobre tudo e deixa tudo à vista. -----> lema escolhido: cobrir
@@ -32,8 +26,6 @@ lema: cobrir   probabilidade: 0.005109793771395174
 Uma mulher nua seria menos perigosa que uma saia exibida, que cobre tudo e deixa tudo à vista. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 1.9138961106568797e-07
 lema: cobrir   probabilidade: 4.747831148450146e-05
-3 435 2 35 cobrar
-153 435 55 413 cobrir
 
 ===================== SEM ALISAMENTO ============================
 Pela grossura da camada de pó que cobre a lombada dos livros. -----> lema escolhido: cobrir
@@ -43,8 +35,6 @@ lema: cobrir   probabilidade: 0.046839776237789094
 Pela grossura da camada de pó que cobre a lombada dos livros. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 5.741688331970639e-07
 lema: cobrir   probabilidade: 0.0003798264918760117
-2 356 1 35 cobrar
-23 356 11 413 cobrir
 
 ===================== SEM ALISAMENTO ============================
 Exportamos couro e cobre, e não revolução. -----> lema escolhido: cobrir
