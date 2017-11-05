@@ -1,20 +1,45 @@
+
+===================== SEM ALISAMENTO ============================
+Todos os sábados vimos ao técnico ter um teste. -----> lema: ver
+lema: ver   probabilidade: -1
+lema: vir   probabilidade: -1
+===================== COM ALISAMENTO ============================
 Todos os sábados vimos ao técnico ter um teste. -----> lema: vir
-lema: ver probabilidade: 5.021996596191147e-08
-lema: vir probabilidade: 1.099777416048766e-07
+lema: ver   probabilidade: 5.024251054992237e-08
+lema: vir   probabilidade: 1.1002933932333057e-07
 
+===================== SEM ALISAMENTO ============================
 Os grandes homens são maiores na recordação do que ao natural, aquilo que vimos neles é, ao mesmo tempo, o seu melhor e o melhor de nós próprios. -----> lema: ver
-lema: ver probabilidade: 3.1433441524877865e-06
-lema: vir probabilidade: 4.847657984931346e-07
+lema: ver   probabilidade: 0.0
+lema: vir   probabilidade: 0.0
+===================== COM ALISAMENTO ============================
+Os grandes homens são maiores na recordação do que ao natural, aquilo que vimos neles é, ao mesmo tempo, o seu melhor e o melhor de nós próprios. -----> lema: ver
+lema: ver   probabilidade: 3.1446674589457017e-06
+lema: vir   probabilidade: 4.849796939002165e-07
 
+===================== SEM ALISAMENTO ============================
+Sempre vimos boas leis, que fizeram com que uma pequena república crescesse, transformarem-se depois num peso para ela, depois de grande. -----> lema: ver
+lema: ver   probabilidade: -1
+lema: vir   probabilidade: -1
+===================== COM ALISAMENTO ============================
 Sempre vimos boas leis, que fizeram com que uma pequena república crescesse, transformarem-se depois num peso para ela, depois de grande. -----> lema: vir
-lema: ver probabilidade: 5.021996596191147e-08
-lema: vir probabilidade: 5.49888708024383e-08
+lema: ver   probabilidade: 5.024251054992237e-08
+lema: vir   probabilidade: 5.501466966166528e-08
 
+===================== SEM ALISAMENTO ============================
+Do país de onde vimos não há tristeza. -----> lema: ver
+lema: ver   probabilidade: 0.0
+lema: vir   probabilidade: 0.0
+===================== COM ALISAMENTO ============================
 Do país de onde vimos não há tristeza. -----> lema: vir
-lema: ver probabilidade: 9.975810654325391e-08
-lema: vir probabilidade: 3.27693509571272e-07
+lema: ver   probabilidade: 9.980272992403217e-08
+lema: vir   probabilidade: 3.2784672728370516e-07
 
-Neste momento, vimos informar-lhes as demissões. -----> lema: vir
-lema: ver probabilidade: 5.021996596191147e-08
-lema: vir probabilidade: 5.49888708024383e-08
-
+===================== SEM ALISAMENTO ============================
+Neste momento, vimos informar-lhes as demissões. -----> lema: ver
+lema: ver   probabilidade: 0.0
+lema: vir   probabilidade: 0.0
+===================== COM ALISAMENTO ============================
+Neste momento, vimos informar-lhes as demissões. -----> lema: ver
+lema: ver   probabilidade: 2.332352136917113e-06
+lema: vir   probabilidade: 2.2016247991017372e-07
