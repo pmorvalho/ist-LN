@@ -1,0 +1,11 @@
+Comentários sobre viabilidade (MP2 LN 2017/2018 MEIC-A)
+
+Grupo 19
+80967, Daniel Correia
+81151, Pedro Orvalho
+
+
+1) Discussão de ignorar (ou não) a pontuação
+	
+	- Ter em consideração a pontuação na construção dos n-gramas, pode ter consequências nos dois sentidos: por um lado podemos estar a dar demasiada importância à existência de pontuação antes/depois de uma palavra; por outro lado, ao termos em consideração a pontuação as nossas contagens de bigramas são mais abrangentes para as várias possibilidades de input.
+

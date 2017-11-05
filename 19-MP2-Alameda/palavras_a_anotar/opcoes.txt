@@ -1,0 +1,26 @@
+Descrição das opções tomadas (MP2 LN 2017/2018 MEIC-A)
+
+Grupo 19
+80967, Daniel Correia
+81151, Pedro Orvalho
+
+
+1) Escolha da estratégia de alisamento
+
+	- Escolhemos usar add-one por ser mais fácil de implementar, embora tenha alguns problemas conhecidos da teórica relativamente à movimentação de uma maior porção da massa de probabilidade.
+
+
+2) Abordagem no cálculo das probabilidades
+
+	- Em relação às probabilidades só calculamos as probabilidades do bigrama antes e depois da palavra porque o resto é igual.
+
+
+3) Decisões durante a fase de etiquetação de frases 
+
+	- Durante a etiquetação das frases do corpus fornecido, todas as frases em que fosse discutível para nós qual dos lemas seria o mais apropriado, nós deixámos como "tenho dúvidas".
+
+
+4) Decisões sobre tokenização e tratamento de input
+
+	- Na construção dos n-gramas e na tokenização das frases para teste, utilizámos a package NLTK de Python para tokenizar as strings. Isto levou a que os bigramas obtidos tivessem em consideração a existência de pontuação.
+

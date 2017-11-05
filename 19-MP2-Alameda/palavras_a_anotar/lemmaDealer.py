@@ -49,6 +49,7 @@ def calculate_prob(phrase, word, lemmas):
 			elif bi[1] == l and bi[0] == w_bef:
 				bi_before  = int(b[1])
 
+		print(bi_before,count_w_bef,bi_after,count_lemma,l)
 		smooth_results.append((l, (((bi_before+1)/(count_w_bef+V))*((bi_after+1)/(count_lemma+V)))))
 		try:
 			basic_results.append( (l, (bi_before/count_w_bef)*(bi_after/count_lemma) ) )
@@ -61,7 +62,7 @@ def calculate_prob(phrase, word, lemmas):
 		if maximum[1] < r[1]:
 			maximum = r
 
-	print(str(phrase), " -----> lema: ", maximum[0],sep="")
+	print(str(phrase), " -----> lema escolhido: ", maximum[0],sep="")
 	for r in basic_results:
 		print("lema: ",r[0], "   probabilidade: ", r[1],sep="")
 
@@ -71,7 +72,7 @@ def calculate_prob(phrase, word, lemmas):
 		if maximum[1] < r[1]:
 			maximum = r
 
-	print(str(phrase), " -----> lema: ", maximum[0],sep="")
+	print(str(phrase), " -----> lema escolhido: ", maximum[0],sep="")
 	for r in smooth_results:
 		print("lema: ",r[0], "   probabilidade: ", r[1],sep="")
 
@@ -98,6 +99,7 @@ if __name__ == '__main__':
 		print("Wrong format in files")
 		raise
 
+	print("Grupo 19 - Resultados com/sem alisamento")
 	for p in phrases:
 		calculate_prob(p, params[0], params[1])
 	

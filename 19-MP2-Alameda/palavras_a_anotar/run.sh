@@ -23,4 +23,4 @@ mv vimosBigramas-sorted.txt vimosBigramas.txt
 
 ./lemmaDealer.py vimosUnigramas.txt vimosBigramas.txt vimosParametrizacao.txt vimosFrases.txt > vimosResultado.txt
 
-./lemmaDealer.py cobreUnigramas.txt cobreBigramas.txt cobreParametrizacao.txt cobreFrases.txt > cobreResltado.txt
+./lemmaDealer.py cobreUnigramas.txt cobreBigramas.txt cobreParametrizacao.txt cobreFrases.txt > cobreResultado.txt
