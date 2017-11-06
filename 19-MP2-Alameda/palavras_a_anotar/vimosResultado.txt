@@ -8,8 +8,14 @@ Comentário Geral: Contagem do unigrama "vir" é de 43 e a contagem do unigrama 
 Utilizamos para calcular a probabilidade de cada lema a fórmula de calculo de probabilidade de bigramas com alisamento Add-one, para os dois bigramas:
 
 	P(lema) = P("w1 lema"| w1) x P("lema w2"| "lema")
+=======
+Comentário Geral: Contagem do unigrama "vir" é de 43 e a contagem do unigrama "ver" é de 450.
+Utilizamos para calcular a probabilidade de cada lema a fórmula de cálculo de probabilidade de bigramas com alisamento Add-one, para os dois bigramas:
+	
+	P(lema) com alisamento =
+>>>>>>> 49134c0559a4a93218546bb5e77d8b1dacfdcc16
 
-			com alisamento
+			= P("w1 lema"| w1) x P("lema w2"| "lema")
 
 			= (( C("w1 lema") + 1 )/( C(w1) + V) ) x (( C("lema w2") + 1)/( C("lema") + V))
 
@@ -28,7 +34,7 @@ lema: vir   probabilidade: 1.1002933932333057e-07
 que neles
 
 Comentário: Neste caso os bigramas "sábados vir" e "sábados ver" têm uma contagem de zero, logo as probabilidades para ambos os lemas sem alisamento são iguais a 0. O unigrama "sábados" também tem uma contagem de 0.
-No que toca aos bigramas "vir ao" e "ver ao", "vir ao" tem uma contagem de 1 enquanto "ver ao" tem uma contagem de 0, o que faz com que após o alisamento, e sendo a contagem do unigrama "vir" (43) menor que a contagem do unigrama "ver" (450), a probabilidade do lema "vir" ser maior.
+No que toca aos bigramas "vir ao" e "ver ao", "vir ao" tem uma contagem de 1 enquanto "ver ao" tem uma contagem de 0, o que faz com que após o alisamento, e sendo a contagem do unigrama "vir" (43) menor que a contagem do unigrama "ver" (450), a probabilidade do lema "vir" é maior.
 
 
 ===================== SEM ALISAMENTO ============================
@@ -40,8 +46,8 @@ os grandes homens são maiores na recordação do que ao natural, aquilo que vim
 lema: ver   probabilidade: 3.1446674589457017e-06
 lema: vir   probabilidade: 4.849796939002165e-07
 
-Comentário: Neste caso o bigrama "que vir" tem uma contagem de 9 e o bigrama "que ver" têm uma contagem de 70. O unigrama "que" tem uma contagem de 570.
-No que toca aos bigramas "vir neles" e "ver ao", "vir neles" tem uma contagem de 0 enquanto "ver neles" tem uma contagem de 0, o que faz com que a probabilidade sem alisamento seja de 0 para ambos os lemas.
+Comentário: Neste caso o bigrama "que vir" tem uma contagem de 9 e o bigrama "que ver" tem uma contagem de 70. O unigrama "que" tem uma contagem de 570.
+No que toca aos bigramas "vir neles" e "ver neles", "vir neles" tem uma contagem de 0 enquanto "ver neles" tem uma contagem de 0, o que faz com que a probabilidade sem alisamento seja de 0 para ambos os lemas.
 Após o alisamento mesmo sendo a contagem do lema "vir" (43) mais baixa que o lema "ver" (450), a contagem do bigrama "que ver" é bastante maior que a do bigrama "que vir" logo a probabilidade é maior para o lema "ver".
 
 
@@ -53,10 +59,9 @@ lema: vir   probabilidade: 0.0
 sempre vimos boas leis, que fizeram com que uma pequena república crescesse, transformarem-se depois num peso para ela, depois de grande. -----> lema escolhido: ver
 lema: ver   probabilidade: 1.00343093103941e-07
 lema: vir   probabilidade: 5.493696532598497e-08
-<<<<<<< HEAD
 
 Comentário: Neste caso o bigrama "sempre vir" tem uma contagem de 0 enquanto que o bigrama "sempre ver" tem uma contagem de 1, e a contagem do unigrama "sempre" é de 6.
-No que toca aos bigramas "vir boas" e "ver boas" ambos têm uma contagem de 0, o que faz com que as duas probabilidades dos lemas antes do alisamento seja de 0.
+No que toca aos bigramas "vir boas" e "ver boas" ambos têm uma contagem de 0, o que faz com que as duas probabilidades dos lemas antes do alisamento sejam de 0.
 Assim sendo após o alisamento, a probabilidade é maior para o lema "ver" pois o bigrama "sempre ver" tem 1 ocorrência.
 
 
@@ -69,8 +74,8 @@ do país de onde vimos não há tristeza. -----> lema escolhido: vir
 lema: ver   probabilidade: 9.980272992403217e-08
 lema: vir   probabilidade: 3.2784672728370516e-07
 
-Comentário: Neste caso o bigrama "onde vir" tem uma contagem de 5 enquanto que o bigrama "onde ver" têm uma contagem de 1. O unigrama "onde" tem uma contagem de 29.
-No que toca aos bigramas "vir não" e "ver não" ambos têm uma contagem de 0, o que faz com que antes do alisamento as probabilidades de ambos os lemas seja igual a 0.
+Comentário: Neste caso o bigrama "onde vir" tem uma contagem de 5 enquanto que o bigrama "onde ver" tem uma contagem de 1. O unigrama "onde" tem uma contagem de 29.
+No que toca aos bigramas "vir não" e "ver não" ambos têm uma contagem de 0, o que faz com que, antes do alisamento, as probabilidades de ambos os lemas sejam iguais a 0.
 Visto que a contagem do bigrama "onde vir" (5) é maior que a contagem do bigrama "onde ver" (450), a probabilidade do lema "vir" é maior.
 
 
@@ -84,5 +89,5 @@ lema: ver   probabilidade: 2.332352136917113e-06
 lema: vir   probabilidade: 2.2016247991017372e-07
 
 Comentário: Neste caso o bigrama ", vir" tem uma contagem de 4 e o bigrama ", ver" tem uma contagem de 57. O unigrama "," tem uma contagem de 1058.
-No que toca aos bigramas "vir informar-lhes" e "ver informar-lhes", ambos têm uma contagem de 0, o que faz com que as probabilidades de ambos os lemas seja de 0.
+No que toca aos bigramas "vir informar-lhes" e "ver informar-lhes", ambos têm uma contagem de 0, o que faz com que as probabilidades de ambos os lemas sejam de 0.
 Sendo assim após o alisamento, a maior probabilidade é do lema "ver" pois o bigrama ", ver" (57) tem uma contagem superior ao bigrama ", vir" (4).
