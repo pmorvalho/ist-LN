@@ -1,46 +1,66 @@
 Grupo 19 - Resultados com/sem alisamento
+sábados ao
+0 0 0 450 ver
+sábados ao
+0 0 1 43 vir
 
 ===================== SEM ALISAMENTO ============================
-Todos os sábados vimos ao técnico ter um teste. -----> lema escolhido: ver
+todos os sábados vimos ao técnico ter um teste. -----> lema escolhido: ver
 lema: ver   probabilidade: 0
 lema: vir   probabilidade: 0
 ===================== COM ALISAMENTO ============================
-Todos os sábados vimos ao técnico ter um teste. -----> lema escolhido: vir
+todos os sábados vimos ao técnico ter um teste. -----> lema escolhido: vir
 lema: ver   probabilidade: 5.024251054992237e-08
 lema: vir   probabilidade: 1.1002933932333057e-07
+que neles
+70 570 0 450 ver
+que neles
+9 570 0 43 vir
 
 ===================== SEM ALISAMENTO ============================
-Os grandes homens são maiores na recordação do que ao natural, aquilo que vimos neles é, ao mesmo tempo, o seu melhor e o melhor de nós próprios. -----> lema escolhido: ver
+os grandes homens são maiores na recordação do que ao natural, aquilo que vimos neles é, ao mesmo tempo, o seu melhor e o melhor de nós próprios. -----> lema escolhido: ver
 lema: ver   probabilidade: 0.0
 lema: vir   probabilidade: 0.0
 ===================== COM ALISAMENTO ============================
-Os grandes homens são maiores na recordação do que ao natural, aquilo que vimos neles é, ao mesmo tempo, o seu melhor e o melhor de nós próprios. -----> lema escolhido: ver
+os grandes homens são maiores na recordação do que ao natural, aquilo que vimos neles é, ao mesmo tempo, o seu melhor e o melhor de nós próprios. -----> lema escolhido: ver
 lema: ver   probabilidade: 3.1446674589457017e-06
 lema: vir   probabilidade: 4.849796939002165e-07
+sempre boas
+1 6 0 450 ver
+sempre boas
+0 6 0 43 vir
 
 ===================== SEM ALISAMENTO ============================
-Sempre vimos boas leis, que fizeram com que uma pequena república crescesse, transformarem-se depois num peso para ela, depois de grande. -----> lema escolhido: ver
-lema: ver   probabilidade: 0
-lema: vir   probabilidade: 0
-===================== COM ALISAMENTO ============================
-Sempre vimos boas leis, que fizeram com que uma pequena república crescesse, transformarem-se depois num peso para ela, depois de grande. -----> lema escolhido: vir
-lema: ver   probabilidade: 5.024251054992237e-08
-lema: vir   probabilidade: 5.501466966166528e-08
-
-===================== SEM ALISAMENTO ============================
-Do país de onde vimos não há tristeza. -----> lema escolhido: ver
+sempre vimos boas leis, que fizeram com que uma pequena república crescesse, transformarem-se depois num peso para ela, depois de grande. -----> lema escolhido: ver
 lema: ver   probabilidade: 0.0
 lema: vir   probabilidade: 0.0
 ===================== COM ALISAMENTO ============================
-Do país de onde vimos não há tristeza. -----> lema escolhido: vir
+sempre vimos boas leis, que fizeram com que uma pequena república crescesse, transformarem-se depois num peso para ela, depois de grande. -----> lema escolhido: ver
+lema: ver   probabilidade: 1.00343093103941e-07
+lema: vir   probabilidade: 5.493696532598497e-08
+onde não
+1 29 0 450 ver
+onde não
+5 29 0 43 vir
+
+===================== SEM ALISAMENTO ============================
+do país de onde vimos não há tristeza. -----> lema escolhido: ver
+lema: ver   probabilidade: 0.0
+lema: vir   probabilidade: 0.0
+===================== COM ALISAMENTO ============================
+do país de onde vimos não há tristeza. -----> lema escolhido: vir
 lema: ver   probabilidade: 9.980272992403217e-08
 lema: vir   probabilidade: 3.2784672728370516e-07
+, informar-lhes
+57 1058 0 450 ver
+, informar-lhes
+4 1058 0 43 vir
 
 ===================== SEM ALISAMENTO ============================
-Neste momento, vimos informar-lhes as demissões. -----> lema escolhido: ver
+neste momento, vimos informar-lhes as demissões. -----> lema escolhido: ver
 lema: ver   probabilidade: 0.0
 lema: vir   probabilidade: 0.0
 ===================== COM ALISAMENTO ============================
-Neste momento, vimos informar-lhes as demissões. -----> lema escolhido: ver
+neste momento, vimos informar-lhes as demissões. -----> lema escolhido: ver
 lema: ver   probabilidade: 2.332352136917113e-06
 lema: vir   probabilidade: 2.2016247991017372e-07

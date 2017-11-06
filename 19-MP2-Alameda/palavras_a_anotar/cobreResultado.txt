@@ -1,46 +1,66 @@
 Grupo 19 - Resultados com/sem alisamento
+caridade com
+0 0 0 35 cobrar
+caridade com
+0 0 6 413 cobrir
 
 ===================== SEM ALISAMENTO ============================
-A caridade cobre com um véu os defeitos dos homens. -----> lema escolhido: cobrar
+a caridade cobre com um véu os defeitos dos homens. -----> lema escolhido: cobrar
 lema: cobrar   probabilidade: 0
 lema: cobrir   probabilidade: 0
 ===================== COM ALISAMENTO ============================
-A caridade cobre com um véu os defeitos dos homens. -----> lema escolhido: cobrir
+a caridade cobre com um véu os defeitos dos homens. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 5.264206302981604e-08
 lema: cobrir   probabilidade: 3.3919471491992533e-07
+inverno minha
+0 3 0 35 cobrar
+inverno minha
+0 3 0 413 cobrir
 
 ===================== SEM ALISAMENTO ============================
-O inverno cobre minha cabeça, mas uma eterna primavera vive em meu coração. -----> lema escolhido: cobrar
+o inverno cobre minha cabeça, mas uma eterna primavera vive em meu coração. -----> lema escolhido: cobrar
 lema: cobrar   probabilidade: 0.0
 lema: cobrir   probabilidade: 0.0
 ===================== COM ALISAMENTO ============================
-O inverno cobre minha cabeça, mas uma eterna primavera vive em meu coração. -----> lema escolhido: cobrar
+o inverno cobre minha cabeça, mas uma eterna primavera vive em meu coração. -----> lema escolhido: cobrar
 lema: cobrar   probabilidade: 5.260570801391148e-08
 lema: cobrir   probabilidade: 4.842292348945659e-08
+que tudo
+3 435 0 35 cobrar
+que tudo
+153 435 6 413 cobrir
 
 ===================== SEM ALISAMENTO ============================
-Uma mulher nua seria menos perigosa que uma saia exibida, que cobre tudo e deixa tudo à vista. -----> lema escolhido: cobrir
+uma mulher nua seria menos perigosa que uma saia exibida, que cobre tudo e deixa tudo à vista. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 0.0
 lema: cobrir   probabilidade: 0.005109793771395174
 ===================== COM ALISAMENTO ============================
-Uma mulher nua seria menos perigosa que uma saia exibida, que cobre tudo e deixa tudo à vista. -----> lema escolhido: cobrir
+uma mulher nua seria menos perigosa que uma saia exibida, que cobre tudo e deixa tudo à vista. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 1.9138961106568797e-07
 lema: cobrir   probabilidade: 4.747831148450146e-05
+que a
+3 435 2 35 cobrar
+que a
+153 435 55 413 cobrir
 
 ===================== SEM ALISAMENTO ============================
-Pela grossura da camada de pó que cobre a lombada dos livros. -----> lema escolhido: cobrir
+pela grossura da camada de pó que cobre a lombada dos livros. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 0.0003940886699507389
 lema: cobrir   probabilidade: 0.046839776237789094
 ===================== COM ALISAMENTO ============================
-Pela grossura da camada de pó que cobre a lombada dos livros. -----> lema escolhido: cobrir
+pela grossura da camada de pó que cobre a lombada dos livros. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 5.741688331970639e-07
 lema: cobrir   probabilidade: 0.0003798264918760117
+e ,
+2 356 1 35 cobrar
+e ,
+23 356 11 413 cobrir
 
 ===================== SEM ALISAMENTO ============================
-Exportamos couro e cobre, e não revolução. -----> lema escolhido: cobrir
+exportamos couro e cobre, e não revolução. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 0.00016051364365971107
 lema: cobrir   probabilidade: 0.0017207606714367333
 ===================== COM ALISAMENTO ============================
-Exportamos couro e cobre, e não revolução. -----> lema escolhido: cobrir
+exportamos couro e cobre, e não revolução. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 2.9191296011807297e-07
 lema: cobrir   probabilidade: 1.289771422946592e-05
