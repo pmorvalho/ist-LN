@@ -49,7 +49,6 @@ def calculate_prob(phrase, word, lemmas):
 			elif bi[1] == l and bi[0] == w_bef:
 				bi_before  = int(b[1])
 
-		# print(bi_before,count_w_bef,bi_after,count_lemma,l)
 		smooth_results.append((l, (((bi_before+1)/(count_w_bef+V))*((bi_after+1)/(count_lemma+V)))))
 		try:
 			basic_results.append( (l, (bi_before/count_w_bef)*(bi_after/count_lemma) ) )
@@ -83,17 +82,17 @@ if __name__ == '__main__':
 	
 	try:
 		unigrams = open(sys.argv[1], "r+").readlines()
-		unigrams = [line.strip().split("\t") for line in unigrams]
+		unigrams = [line.strip().lower().split("\t") for line in unigrams]
 
 		V = len(unigrams)
 
 		bigrams = open(sys.argv[2], "r+").readlines()
-		bigrams = [line.strip().split("\t") for line in bigrams]
+		bigrams = [line.strip().lower().split("\t") for line in bigrams]
 
-		params   = open(sys.argv[3], "r+").read().strip().split("\n")
+		params   = open(sys.argv[3], "r+").read().strip().lower().split("\n")
 		params[1] = params[1].split(" ")
 
-		phrases  = open(sys.argv[4], "r+").read().strip().split("\n")
+		phrases  = open(sys.argv[4], "r+").read().strip().lower().split("\n")
 
 	except:
 		print("Wrong format in files")

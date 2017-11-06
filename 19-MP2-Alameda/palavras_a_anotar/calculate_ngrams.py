@@ -20,14 +20,14 @@ def get_ngrams_without_smoothing(corpus, keyword):
 	with open(keyword +"Unigramas.txt","a") as output_unigrams:
 		for k,v in count_unigrams.items():
 			line = str(k) + "\t" + str(v) + "\n"
-			output_unigrams.write(line)
+			output_unigrams.write(line.lower())
 
 	count_bigrams = Counter(bigrams)
 	open(keyword +"Bigramas.txt","w").close() #reset output file
 	with open(keyword +"Bigramas.txt","a") as output_bigrams:
 		for k,v in count_bigrams.items():
 			line = " ".join(k) + "\t" + str(v) + "\n"
-			output_bigrams.write(line)
+			output_bigrams.write(line.lower())
 
 
 if __name__ == '__main__':
