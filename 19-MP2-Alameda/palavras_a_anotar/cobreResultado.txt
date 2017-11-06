@@ -1,5 +1,9 @@
 Grupo 19 - Resultados com/sem alisamento
 
+# Grupo 19
+# 80967, Daniel Correia
+# 81151, Pedro Orvalho
+
 ===================== SEM ALISAMENTO ============================
 A caridade cobre com um véu os defeitos dos homens. -----> lema escolhido: cobrar
 lema: cobrar   probabilidade: 0

@@ -21,6 +21,8 @@ cat vimosBigramas.txt | sort > vimosBigramas-sorted.txt
 mv cobreBigramas-sorted.txt cobreBigramas.txt
 mv vimosBigramas-sorted.txt vimosBigramas.txt
 
-./lemmaDealer.py vimosUnigramas.txt vimosBigramas.txt vimosParametrizacao.txt vimosFrases.txt > vimosResultado.txt
+./lemmaDealer.py vimosUnigramas.txt vimosBigramas.txt vimosParametrizacao.txt vimosFrases.txt
 
-./lemmaDealer.py cobreUnigramas.txt cobreBigramas.txt cobreParametrizacao.txt cobreFrases.txt > cobreResultado.txt
+echo "\n\n\n\n"
+
+./lemmaDealer.py cobreUnigramas.txt cobreBigramas.txt cobreParametrizacao.txt cobreFrases.txt
