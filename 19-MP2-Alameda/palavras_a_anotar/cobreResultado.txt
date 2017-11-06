@@ -5,7 +5,7 @@ Grupo 19 - Resultados com/sem alisamento
 # 81151, Pedro Orvalho
 
 Comentário Geral: Contagem do unigrama "cobrir" é de 413 e a contagem do unigrama "cobrar" é de 35.
-Ou seja em 497 frases anotadas, 40 cobre foi considerado um não-verbo o que pode influenciar os resultados.
+Ou seja em 497 frases anotadas, em 40 "cobre" foi considerado um não-verbo o que pode influenciar os resultados.
 
 Utilizamos para calcular a probabilidade de cada lema a fórmula de calculo de probabilidade de bigramas com alisamento Add-one, para os dois bigramas:
 	
@@ -28,7 +28,7 @@ a caridade cobre com um véu os defeitos dos homens. -----> lema escolhido: cobr
 lema: cobrar   probabilidade: 5.264206302981604e-08
 lema: cobrir   probabilidade: 3.3919471491992533e-07
 
-Comentário: Neste caso os bigramas "caridade cobrar" e "caridade cobrir" têm uma contagem de 0, e a contagem do unigrama caridade é também igual a 0. O que faz com que a probabilidade de ambos os lemas seja de 0.
+Comentário: Neste caso os bigramas "caridade cobrar" e "caridade cobrir" têm uma contagem de 0, e a contagem do unigrama "caridade" é também igual a 0. O que faz com que a probabilidade de ambos os lemas seja de 0.
 Em relação aos bigramas "cobrar com" e "cobrir com", "cobrar com" tem uma contagem de 0 enquanto que o bigrama "cobrir com" tem uma contagem de 6.
 Assim sendo após o alisamento a probabilidade do lema "cobrir" é maior do que a probabilidade do lema "cobrar".
 
