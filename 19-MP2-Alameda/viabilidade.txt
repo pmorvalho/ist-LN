@@ -17,3 +17,19 @@ Grupo 19
 	- No entanto, em termos práticos, o que faria sentido se tivermos de "apostar" em qual o lema correto para um input desconhecido, seria escolher o lema que já foi visto mais vezes no corpus.
 
 
+3) Discussão sobre o tamanho reduzido do corpus
+	
+	- O corpus que temos é muito pequeno e desequilibrado (mais de 70% das frases eram só de uma categoria). Para além disso, os resultados que obtemos estão limitados pelo que vimos no corpus o que torna o sistema pouco robusto para inputs desconhecidos.
+
+4) Discussão de limitações de sistemas deste tipo de apenas duas etiquetas
+
+	- O facto de só serem consideradas duas etiquetas também é problemático por existirem outras categorias "não-verbo" que não são consideradas no cálculo de probabilidades das frases.
+
+	- Por exemplo, no caso da palavra "cobre", seria útil ter tido em consideração as contagens de "não-verbo" devido à existência do material "cobre".
+
+5) Discussão sobre estes sistemas não terem em conta o contexto
+
+	- Devido às fórmulas/estratégias teóricas usadas, para identificar a categoria do lema basta utilizar as probabilidades da parte ambígua ("w1 lema w2"). Ou seja, não têm em consideração o resto da frase para fornecer contexto. 
+
+	- Por outro lado, ter em conta o resto da frase teria impactos a nivel de desempenho e complexidade computacional (tempo e espaço).
+
