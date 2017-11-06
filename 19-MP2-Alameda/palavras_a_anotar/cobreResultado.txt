@@ -1,12 +1,23 @@
 Grupo 19 - Resultados com/sem alisamento
-caridade com
-0 0 0 35 cobrar
-caridade com
-0 0 6 413 cobrir
 
 # Grupo 19
 # 80967, Daniel Correia
 # 81151, Pedro Orvalho
+
+Comentário Geral: Contagem do unigrama "cobrir" é de 413 e a contagem do unigrama "cobrar" é de 35.
+Ou seja em 497 frases anotadas, 40 cobre foi considerado um não-verbo o que pode influenciar os resultados.
+
+Utilizamos para calcular a probabilidade de cada lema a fórmula de calculo de probabilidade de bigramas com alisamento Add-one, para os dois bigramas:
+	
+	P(lema) = P("w1 lema"| w1) x P("lema w2"| "lema")
+
+			com alisamento
+
+			= (( C("w1 lema") + 1 )/( C(w1) + V) ) x (( C("lema w2") + 1)/( C("lema") + V))
+
+V é o alfabeto das palavras, que é igual a 4341.
+
+Resultados:
 
 ===================== SEM ALISAMENTO ============================
 a caridade cobre com um véu os defeitos dos homens. -----> lema escolhido: cobrar
@@ -16,10 +27,11 @@ lema: cobrir   probabilidade: 0
 a caridade cobre com um véu os defeitos dos homens. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 5.264206302981604e-08
 lema: cobrir   probabilidade: 3.3919471491992533e-07
-inverno minha
-0 3 0 35 cobrar
-inverno minha
-0 3 0 413 cobrir
+
+Comentário: Neste caso os bigramas "caridade cobrar" e "caridade cobrir" têm uma contagem de 0, e a contagem do unigrama caridade é também igual a 0. O que faz com que a probabilidade de ambos os lemas seja de 0.
+Em relação aos bigramas "cobrar com" e "cobrir com", "cobrar com" tem uma contagem de 0 enquanto que o bigrama "cobrir com" tem uma contagem de 6.
+Assim sendo após o alisamento a probabilidade do lema "cobrir" é maior do que a probabilidade do lema "cobrar".
+
 
 ===================== SEM ALISAMENTO ============================
 o inverno cobre minha cabeça, mas uma eterna primavera vive em meu coração. -----> lema escolhido: cobrar
@@ -29,10 +41,11 @@ lema: cobrir   probabilidade: 0.0
 o inverno cobre minha cabeça, mas uma eterna primavera vive em meu coração. -----> lema escolhido: cobrar
 lema: cobrar   probabilidade: 5.260570801391148e-08
 lema: cobrir   probabilidade: 4.842292348945659e-08
-que tudo
-3 435 0 35 cobrar
-que tudo
-153 435 6 413 cobrir
+
+Comentário: Neste caso os bigramas "inverno cobrir" e "inverno cobrar" têm uma contagem igual a 0 o que faz com que a probabilidade de ambos os lemas seja igual a 0. A contagem do unigrama "inverno" é igual a 3.
+Em relação aos bigramas "cobrar minha" e "cobrir minha" ambos têm uma contagem igual a zero, o que também origina probabilidades iguais a 0.
+Sendo assim, depois do alisamento a probabilidade de cobrar é maior, visto que a contagem do lema "cobrar" é menor do que a probabilidade do lema "cobrir". O que não faz muito sentido, pois sendo bigramas com contagens iguais a zero, deveríamos escolher o lema que aparece mais vezes no corpus.
+
 
 ===================== SEM ALISAMENTO ============================
 uma mulher nua seria menos perigosa que uma saia exibida, que cobre tudo e deixa tudo à vista. -----> lema escolhido: cobrir
@@ -42,10 +55,11 @@ lema: cobrir   probabilidade: 0.005109793771395174
 uma mulher nua seria menos perigosa que uma saia exibida, que cobre tudo e deixa tudo à vista. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 1.9138961106568797e-07
 lema: cobrir   probabilidade: 4.747831148450146e-05
-que a
-3 435 2 35 cobrar
-que a
-153 435 55 413 cobrir
+
+Comentário: O bigrama "que cobrar" tem uma contagem de 3, enquanto que o bigrama "que cobrir" tem uma contagem de 153. O unigrama "que" tem uma contagem de 435.
+O bigrama "cobrar tudo" tem uma contagem de zero, o que faz com que a probabilidade do lema "cobrar" seja 0. Enquanto que o bigrama "cobrir tudo" tem uma contagem de 6, o que origina uma probabilidade do lema "cobrir" superior a zero.
+Após o alisamento as probabilidades continuam a corresponder, descendo um pouco a probabilidade do lema "cobrir" e subindo um pouco a probabilidade do lema "cobrar", sendo a mais alta a do lema "cobrir".
+
 
 ===================== SEM ALISAMENTO ============================
 pela grossura da camada de pó que cobre a lombada dos livros. -----> lema escolhido: cobrir
@@ -55,10 +69,12 @@ lema: cobrir   probabilidade: 0.046839776237789094
 pela grossura da camada de pó que cobre a lombada dos livros. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 5.741688331970639e-07
 lema: cobrir   probabilidade: 0.0003798264918760117
-e ,
-2 356 1 35 cobrar
-e ,
-23 356 11 413 cobrir
+
+Comentário: Tal como dito em cima o bigrama "que cobrar" tem uma contagem de 3, enquanto que o bigrama "que cobrir" tem uma contagem de 153. O unigrama "que" tem uma contagem de 435.
+Em relação ao bigrama "cobrar a", este tem uma contagem de 2, enquanto que o bigrama "cobrir a" tem uma contagem de 55.
+Assim sendo a probabilidade do lema "cobrir" é maior (~0,05).
+Após os alisamentos as probabilidades descem, mantendo-se a probabilidade do lema "cobrir" como mais alta.
+
 
 ===================== SEM ALISAMENTO ============================
 exportamos couro e cobre, e não revolução. -----> lema escolhido: cobrir
@@ -68,3 +84,8 @@ lema: cobrir   probabilidade: 0.0017207606714367333
 exportamos couro e cobre, e não revolução. -----> lema escolhido: cobrir
 lema: cobrar   probabilidade: 2.9191296011807297e-07
 lema: cobrir   probabilidade: 1.289771422946592e-05
+
+Comentário: O bigrama "e cobrar" tem uma contagem de 2, enquanto que a contagem do bigrama "e cobrir" tem uma contagem de 23. O unigrama "e" tem uma contagem de 356.
+A contagem do bigrama "cobrar ," é de 1 enquanto que a contagem do bigrama "cobrir ," é de 11.
+Assim sendo a probabilidade de ser o lema "cobrir" é maior.
+Após o alisamento as probabilidades descem, continuando a probabilidade do lema "cobrir" a ser maior que a probabilidade do lema "cobrar".

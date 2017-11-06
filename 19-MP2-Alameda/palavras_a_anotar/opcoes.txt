@@ -23,5 +23,5 @@ Grupo 19
 4) Abordagem no cálculo das probabilidades
 
 	- Em relação às probabilidades só calculamos as probabilidades do bigrama antes e depois da palavra porque o resto da frase é exactamente igual.
-
+	- Caso as probabilidades sejam iguais a zero, optámos nesses resultados por escolher o primeiro lema.
 

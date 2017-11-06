@@ -6,13 +6,14 @@ Grupo 19 - Resultados com/sem alisamento
 
 Comentário Geral: Contagem do unigrama "vir" é de 43 e a contagem do unigrama "ver" é de (450).
 Utilizamos para calcular a probabilidade de cada lema a fórmula de calculo de probabilidade de bigramas com alisamento Add-one, para os dois bigramas:
-	
+
 	P(lema) = P("w1 lema"| w1) x P("lema w2"| "lema")
 
 			com alisamento
 
-			= (( C("w1 lema") + 1 )/( C(w1) + V) ) x (( C("lema w2") + 1)/( C("lema") + 1))
+			= (( C("w1 lema") + 1 )/( C(w1) + V) ) x (( C("lema w2") + 1)/( C("lema") + V))
 
+V é o alfabeto das palavras, que é igual a 4242.
 
 Resultados:
 
