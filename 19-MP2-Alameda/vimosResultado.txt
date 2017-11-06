@@ -25,7 +25,6 @@ lema: vir   probabilidade: 0
 todos os sábados vimos ao técnico ter um teste. -----> lema escolhido: vir
 lema: ver   probabilidade: 5.024251054992237e-08
 lema: vir   probabilidade: 1.1002933932333057e-07
-que neles
 
 Comentário: Neste caso os bigramas "sábados vir" e "sábados ver" têm uma contagem de zero, logo as probabilidades para ambos os lemas sem alisamento são iguais a 0. O unigrama "sábados" também tem uma contagem de 0.
 No que toca aos bigramas "vir ao" e "ver ao", "vir ao" tem uma contagem de 1 enquanto "ver ao" tem uma contagem de 0, o que faz com que após o alisamento, e sendo a contagem do unigrama "vir" (43) menor que a contagem do unigrama "ver" (450), a probabilidade do lema "vir" é maior.
