@@ -28,7 +28,7 @@ lema: vir   probabilidade: 1.1002933932333057e-07
 
 Comentário: Neste caso os bigramas "sábados vir" e "sábados ver" têm uma contagem de zero, logo as probabilidades para ambos os lemas sem alisamento são iguais a 0. O unigrama "sábados" também tem uma contagem de 0.
 No que toca aos bigramas "vir ao" e "ver ao", "vir ao" tem uma contagem de 1 enquanto "ver ao" tem uma contagem de 0, o que faz com que após o alisamento, e sendo a contagem do unigrama "vir" (43) menor que a contagem do unigrama "ver" (450), a probabilidade do lema "vir" é maior.
-
+Logo neste caso o nosso sistema deu a resposta que nós estavamos à espera, "vir".
 
 ===================== SEM ALISAMENTO ============================
 os grandes homens são maiores na recordação do que ao natural, aquilo que vimos neles é, ao mesmo tempo, o seu melhor e o melhor de nós próprios. -----> lema escolhido: ver
@@ -42,7 +42,7 @@ lema: vir   probabilidade: 4.849796939002165e-07
 Comentário: Neste caso o bigrama "que vir" tem uma contagem de 9 e o bigrama "que ver" tem uma contagem de 70. O unigrama "que" tem uma contagem de 570.
 No que toca aos bigramas "vir neles" e "ver neles", "vir neles" tem uma contagem de 0 enquanto "ver neles" tem uma contagem de 0, o que faz com que a probabilidade sem alisamento seja de 0 para ambos os lemas.
 Após o alisamento mesmo sendo a contagem do lema "vir" (43) mais baixa que o lema "ver" (450), a contagem do bigrama "que ver" é bastante maior que a do bigrama "que vir" logo a probabilidade é maior para o lema "ver".
-
+Logo neste caso o nosso sistema deu a resposta que nós estavamos à espera, "ver".
 
 ===================== SEM ALISAMENTO ============================
 sempre vimos boas leis, que fizeram com que uma pequena república crescesse, transformarem-se depois num peso para ela, depois de grande. -----> lema escolhido: ver
@@ -56,7 +56,7 @@ lema: vir   probabilidade: 5.493696532598497e-08
 Comentário: Neste caso o bigrama "sempre vir" tem uma contagem de 0 enquanto que o bigrama "sempre ver" tem uma contagem de 1, e a contagem do unigrama "sempre" é de 6.
 No que toca aos bigramas "vir boas" e "ver boas" ambos têm uma contagem de 0, o que faz com que as duas probabilidades dos lemas antes do alisamento sejam de 0.
 Assim sendo após o alisamento, a probabilidade é maior para o lema "ver" pois o bigrama "sempre ver" tem 1 ocorrência.
-
+Logo neste caso o nosso sistema deu a resposta que nós estavamos à espera, "ver".
 
 ===================== SEM ALISAMENTO ============================
 do país de onde vimos não há tristeza. -----> lema escolhido: ver
@@ -70,7 +70,7 @@ lema: vir   probabilidade: 3.2784672728370516e-07
 Comentário: Neste caso o bigrama "onde vir" tem uma contagem de 5 enquanto que o bigrama "onde ver" tem uma contagem de 1. O unigrama "onde" tem uma contagem de 29.
 No que toca aos bigramas "vir não" e "ver não" ambos têm uma contagem de 0, o que faz com que, antes do alisamento, as probabilidades de ambos os lemas sejam iguais a 0.
 Visto que a contagem do bigrama "onde vir" (5) é maior que a contagem do bigrama "onde ver" (450), a probabilidade do lema "vir" é maior.
-
+Logo neste caso o sistema deu a resposta que nós estavamos a espera, "vir".
 
 ===================== SEM ALISAMENTO ============================
 neste momento, vimos informar-lhes as demissões. -----> lema escolhido: ver
@@ -84,3 +84,4 @@ lema: vir   probabilidade: 2.2016247991017372e-07
 Comentário: Neste caso o bigrama ", vir" tem uma contagem de 4 e o bigrama ", ver" tem uma contagem de 57. O unigrama "," tem uma contagem de 1058.
 No que toca aos bigramas "vir informar-lhes" e "ver informar-lhes", ambos têm uma contagem de 0, o que faz com que as probabilidades de ambos os lemas sejam de 0.
 Sendo assim após o alisamento, a maior probabilidade é do lema "ver" pois o bigrama ", ver" (57) tem uma contagem superior ao bigrama ", vir" (4).
+Logo, neste caso o sistema não deu a resposta que nós estavamos à espera, a resposta correcta para nós seria "vir" e o sistema obteve a resposta "ver".
