@@ -6,4 +6,6 @@
 
 [Língua Natural](https://fenix.tecnico.ulisboa.pt/disciplinas/LN351795/2017-2018/1-semestre) - 1º ano 2017-2018
 
-Nota: /4
+Nota: 
+MP1 : 4/4
+MP2 : 4/4
